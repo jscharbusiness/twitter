@@ -1,0 +1,718 @@
+html {
+
+	position: relative;
+	min-height: 100%;
+
+}
+
+body {
+
+	margin-bottom: 60px;
+	background-color: #EAEEEF;
+
+}
+
+.login {
+	position: absolute;
+	width: 300px;
+	z-index: 15;
+	top: 30%;
+	left: 50%;
+	margin: -100px 0 0 -150px;
+	/*font-family: 'Raleway', sans-serif;*/
+	background-color: #fff;
+	padding: 50px;
+	border-radius: 6px;
+}
+
+#loginModalTitle{
+	margin-bottom: 20px;
+}
+
+.views {
+	margin-top: 30px;
+}
+
+.views p{
+	font-family: 'Raleway', sans-serif !important;
+}
+
+.mainH2 {
+
+	padding-top: 30px;
+
+}
+
+.hidden {
+
+	display: none;
+
+}
+
+
+#toggleLogin {
+	padding-right: 15px;
+}
+
+#loginAlert {
+
+	display: none;
+
+}
+
+#tweetSuccess {
+
+	display: none;
+
+}
+
+#tweetFail {
+
+	display: none;
+
+}
+
+#commentSuccess {
+
+	display: none;
+
+}
+
+#commentFail {
+
+	display: none;
+
+}
+
+a:not([href]):not([tabindex]) {
+
+    color: white;
+    text-decoration: none;
+
+}
+
+a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
+
+    color: white;
+    text-decoration: none;
+
+}
+
+.likeTweet img{
+
+	width: 30px;
+	height: 30px;
+
+}
+
+.likeTweet img:hover {
+
+	cursor: pointer;
+
+}
+
+.comment img{
+
+	width: 30px;
+	height: 30px;
+
+}
+
+.comment img:hover {
+
+	cursor: pointer;
+
+}
+
+.needLogin img {
+
+	width: 30px;
+	height: 30px;
+
+}
+
+
+.mainContainer {
+
+	background-color: #fff;
+	min-height: 80vh;
+	padding-bottom: 40px;
+
+}
+
+.mainContainer h2{
+
+ 	text-align: center;
+ 	margin-bottom: 40px;
+
+}
+
+.userDiv {
+
+	padding: 15px;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 6px;
+	margin-bottom: 20px;
+	min-height: 66px;
+
+}
+
+.userDiv a:nth-of-type(1){
+
+	line-height: 36px;
+	margin-left: 10px;
+
+}
+
+.userDiv .toggleFollow{
+
+	float: right;
+
+}
+
+.time {
+
+	color: lightgray;
+
+}
+
+.tweet {
+
+	background-color: #EAEEEF;
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 40px;
+	border-radius: 6px;
+
+}
+
+.tweet p:nth-of-type(1){
+
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	background-color: #304050;
+	padding: 15px;
+	margin-bottom: 0px;
+
+
+}
+
+.tweet p:nth-of-type(1) img{
+
+	margin-right: 4px;
+	border-radius: 50%;
+
+}
+
+.tweet p:nth-of-type(1) a{
+
+	margin-right: 5px;
+
+}
+
+.tweet p:nth-of-type(2){
+
+	background-color: #fff;
+	width: auto;
+	margin-right: 20px;
+	margin-left: 20px;
+	padding: 30px  20px;
+	min-height: 100px;
+	margin-bottom: 0px;
+
+}
+
+.tweet .numbers{
+
+	background-color: #fff;
+	width: auto;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 0px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	padding: 5px 20px 10px 20px;
+
+}
+
+.tweet .numbers a{
+
+	color: #B3B8BD;
+	cursor: pointer;
+
+}
+
+.tweet .numbers a:nth-of-type(2){
+
+	margin-left: 5px;
+
+}
+
+.tweet .numbers a:hover{
+
+	color: #9AA1A8;
+
+}
+
+
+
+/*.tweet .options{
+
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	background-color: #304050;
+	margin-bottom: 0px;
+	padding: 15px;
+
+}*/
+
+.tweet .options{
+
+	background-color: #E9EDEE;
+	width: auto;
+	margin-right: 20px;
+	margin-left: 20px;
+	padding: 10px 0px;
+	min-height: 50px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+
+}
+
+.tweet .options img{
+
+	margin-right: 20px;
+
+}
+
+.tweet .myTweet .deleteTweet {
+
+    height: 20px;
+    float: right;
+    margin: 15px 5px;
+    color: #4F9DD6;
+    cursor: pointer;
+
+}
+
+.tweet .myTweet .deleteTweet:hover {
+
+    color: #4F9DD6;
+
+}
+
+.response {
+
+	background-color: #EAEEEF;
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+	padding-bottom: 7px;
+	border-radius: 6px;
+
+}
+
+.response p:nth-of-type(1){
+
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	padding: 3px 3px 3px 15px;
+	margin-bottom: 0px;
+
+}
+
+.response p:nth-of-type(2){
+
+	background-color: #fff;
+	width: auto;
+	line-height: 27px;
+	margin-right: 7px;
+	margin-left: 7px;
+	padding: 10px 10px;
+	min-height: 30px;
+	margin-bottom: 0px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+
+}
+
+.response .time{
+
+	color: #79838E;
+	margin-left: 5px;
+
+}
+
+.response .delete {
+
+    height: 20px;
+    float: right;
+    margin-right: 8px;
+    margin-top: 1px;
+    color: #4F9DD6;
+    cursor: pointer;
+
+}
+
+.response img:hover {
+
+	cursor: pointer;
+
+}
+
+.userProfile .profileHeader {
+
+	background-color: #2C3E50;
+	width: 100%;
+	min-height: 120px;
+	padding: 20px;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	color: #fff;
+
+}
+
+.userProfile .profileHeader p{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.userProfile .profileOther{
+
+	background-color: #eee;
+	margin-bottom: 40px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+
+}
+
+#account {
+
+	margin-bottom: 10px;
+
+}
+
+.row, .col-12 {
+
+	padding-top: 30px;
+
+}
+
+.userProfile .profileOther .tweet {
+
+	width: 85%;
+
+}
+
+.userProfile .data {
+
+	width: auto;
+	margin: 0 2%;
+	height: 80px;
+	float: left;
+
+}
+
+.userProfile .profileImage{
+
+	text-align: center;
+
+}
+
+.userProfile .profileImage img{
+
+	max-height: 200px;
+	max-width: 100%;
+	margin: 0px auto 20px auto;
+
+}
+
+.userProfile .userPicture {
+
+	height: 80px;
+	width: 80px;
+	float: left;
+
+}
+
+.userProfile .userButton {
+
+	height: 80px;
+	margin: 0;
+
+}
+
+.userProfile .profileDetails {
+
+	min-height: 80px;
+	border-bottom: 3px solid #2C3E50;
+	display: flex;
+	align-items: center;
+
+}
+
+.userProfile .userName {
+
+	float: left;
+	padding: 20px;
+	min-width: 15%;
+	font-weight: bold;
+	margin-bottom: 0px;
+
+}
+
+.userProfile .userDescription {
+
+	float: left;
+	padding: 20px;
+	margin-bottom: 0px;
+
+}
+
+#comment {
+	
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+#commentContent {
+	
+	margin-bottom: 10px;
+
+}
+
+#search {
+
+	margin-bottom: 10px;
+
+}
+
+#tweetContent {
+
+	margin-bottom: 10px;
+	min-height: 120px;
+
+}
+
+.footer {
+
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	color: #fff;
+
+}
+
+.footer p {
+
+	margin-bottom: 0px;
+
+}
+
+
+
+@media (max-width: 991px) {
+
+	.profileTweets {
+
+		margin-top: 30px;
+
+	}
+
+	.tweet{
+
+		width: 90%;
+		margin: 30px auto 0 auto;
+
+	}
+
+	.container, .mainContainer {
+
+		width: 100%;
+
+	}
+
+	#commentContent {
+
+		margin-top: 20px;
+
+	}
+
+	.response {
+
+		width: 90%;
+
+	}
+
+
+	#comment {
+
+		width: 90%;
+	    margin-right: auto;
+	    margin-left: auto;
+
+	}
+
+	.response {
+
+		margin-top: 30px;
+
+	}
+
+	.userProfile .userPicture {
+
+	    width: 50%;
+	    margin: 0;
+	    float: left;
+	    height: 200px;
+
+	}
+
+	.userProfile .userButton {
+
+	    height: 60px;
+
+	}
+
+	#account{
+
+		margin-bottom: 0px;
+
+	}
+
+	.userProfile .userPicture img {
+
+		display: block;
+	    max-width: 180px;
+	    width: 80%;
+	    height: auto;
+	    margin: auto;
+	    max-height: 180px;
+
+	}
+
+	.userProfile .data {
+
+	    width: 50%;
+	    margin: 0 2%;
+	    height: 30px;
+	    float: none;
+
+	}
+
+	.userDiv {
+
+	    padding: 20px;
+	    width: 90%;
+	    margin: 0 auto 20px auto;
+	    border-radius: 6px;
+	    min-height: 100px;
+
+	}
+
+	.userDiv a:nth-of-type(1) {
+
+		display: block;
+	    line-height: 36px;
+	    width: 100%;
+	    text-align: center;
+	    margin: 0;
+
+	}
+
+	.userDiv a:nth-of-type(2) {
+
+		display: block;
+		float: none;
+	    width: 80%;
+	    text-align: center;
+	    margin: 10px auto;
+
+	}
+    
+}
+
+@media (max-width: 768px) {
+
+	.userProfile .profileDetails {
+
+	    min-height: 80px;
+	    padding: 20px;
+	    border-bottom: 3px solid #2C3E50;
+	    display: block; 
+
+	}
+
+	.profileDetails p.userName {
+
+		float: none;
+		width: 100%;
+		padding: 10px;
+
+	}
+
+	.profileDetails p.userDescription {
+
+		float: none;
+		width: 100%;
+		padding: 10px;
+
+	}
+
+	.profileTweets {
+
+		margin-top: 30px;
+		padding: 0px;
+
+	}
+
+	.profileOther .row {
+
+		padding: 0px;
+
+	}
+
+	.profileOther .row .col-lg-6:nth-of-type(1) {
+
+		padding: 0px;
+		margin-top: 20px;
+
+	}
+
+	.tweet{
+
+		width: 100% !important;
+		margin: 40px auto;
+
+	}
+	
+	.container {
+
+	    max-width: none;
+	    width: 100%;
+
+	}
+    
+}
+
+@media (max-width: 576px) {
+
+	.container {
+
+	    max-width: none;
+	    width: 100%;
+
+	}
+
+}
